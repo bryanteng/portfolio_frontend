@@ -9,7 +9,7 @@ const Project = ({project}) => (
     {project.tools ? project.tools.map(tool => <li>{tool} </li>) : null}
     </ul>
     <ul>
-    {project.pictures ? project.pictures.map(picture => <li>{picture.context} <img alt={picture.context} src={picture.picture} /> <PictureCarousel /> </li>) : null}
+    {project.pictures ? <PictureCarousel pictures={project.pictures} />  : null}
     </ul>
   </div>
 );
