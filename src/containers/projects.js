@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Project from '../components/project'
 export default class Projects extends Component{
 
   state={
@@ -15,19 +15,7 @@ export default class Projects extends Component{
   render(){
     return(
       <div>
-      { this.state.projects ? this.state.projects.map(project =>
-        <div>
-          <h1>{project.title} </h1>
-          <h4>{project.details} </h4>
-          <ul>
-          {project.tools ? project.tools.map(tool => <li>{tool} </li>) : null}
-          </ul>
-          <ul>
-          {project.pictures ? project.pictures.map(picture => <li>{picture.context} <img alt={picture.context} src={picture.picture} /> </li>) : null}
-          </ul>
-        </div>
-      )
-        : "WHERE ME PROJECTS M8" }
+      { this.state.projects ? this.state.projects.map(project => <Project project={project} />) : "WHERE ME PROJECTS M8" }
       </div>
     )
   }
