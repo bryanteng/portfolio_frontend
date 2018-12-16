@@ -23,7 +23,7 @@ export default class Projects extends Component{
           {project.tools ? project.tools.map(tool => <li>{tool} </li>) : null}
           </ul>
           <ul>
-          {project.pictures ? project.pictures.map(picture => <li>{picture.context} <img src={picture.picture} /> </li>) : null}
+          {project.pictures ? project.pictures.map(picture => <li>{picture.context} <img alt={picture.context} src={picture.picture} /> </li>) : null}
           </ul>
         </div>
       )
