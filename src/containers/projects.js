@@ -22,9 +22,12 @@ export default class Projects extends Component{
           <ul>
           {project.tools ? project.tools.map(tool => <li>{tool} </li>) : null}
           </ul>
+          <ul>
+          {project.pictures ? project.pictures.map(picture => <li>{picture.context} <img src={picture.picture} /> </li>) : null}
+          </ul>
         </div>
       )
-        : "hi from Projects" }
+        : "WHERE ME PROJECTS M8" }
       </div>
     )
   }
