@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './pictureCarousel.css'
+import '../styles/pictureCarousel.css'
 import Popup from 'reactjs-popup'
 
 const PictureCarousel = ({pictures}) => (
@@ -14,5 +14,5 @@ const PictureCarousel = ({pictures}) => (
     )}
   </Popup>
 );
-// project.pictures.map(picture => <li>{picture.context} <img alt={picture.context} src={picture.picture} /> <PictureCarousel picture={project.pictures} /> </li>)
+
 export default PictureCarousel

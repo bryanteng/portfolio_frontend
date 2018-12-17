@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Project from '../components/project'
+import '../styles/projects.css'
 export default class Projects extends Component{
 
   state={
@@ -14,7 +15,7 @@ export default class Projects extends Component{
 
   render(){
     return(
-      <div>
+      <div id="projects">
       { this.state.projects ? this.state.projects.map(project => <Project project={project} />) : "WHERE ME PROJECTS M8" }
       </div>
     )
