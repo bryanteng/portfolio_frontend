@@ -9,10 +9,8 @@ class Navbar extends Component{
 
     return(
       <Fragment>
-        <div class="ui seven item menu" id="navbar">
-          <div class="header item" id="icon">
-            <img alt="logo" src={bt2} />
-          </div>
+
+        <div id="navbar">
           <a class="item">
             <Link to="/about"> About </Link>
           </a>
